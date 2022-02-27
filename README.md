@@ -162,6 +162,44 @@ docker run -it memcrashed
 
 
 
+
+# Інше
+
+- **Інструкція як автоматично скаржитись на хуйловські телеграм-канали** - https://github.com/ftishko/de_d-mosk_l
+
+_via Docker_
+```
+docker build -t de_d-mosk_l .
+torsocks docker run --rm -it de_d-mosk_l - якщо встановлено тор
+docker run —rm -it de_d-mosk_l
+```
+
+_via Python 3_
+```
+git clone https://github.com/ftishko/de_d-mosk_l.git
+cd de_d-mosk_l
+pip3 install -r requirements.txt
+python3 runner.py
+
+# win
+pip install -r requirements.txt
+python runner.py
+```
+
+
+**LOIC / HOIC**
+GitHub - NewEraCracker/LOIC: Low Orbit Ion Cannon - An open source network stress tool, written in C#. 
+Based on Praetox's LOIC project.
+
+LOIC
+- https://github.com/NewEraCracker/LOIC
+- https://sourceforge.net/projects/loic/  
+
+HOIC
+- https://sourceforge.net/projects/highorbitioncannon/
+
+
+
 # VPN 
 
 **ClearVPN**
@@ -192,29 +230,6 @@ https://my.clearvpn.com/promo/redeem?code=SAVEUKRAINE
 *VPN для Android*
 - Secure VPN https://play.google.com/store/apps/details?id=com.fast.free.unblock.secure.vpn&hl=en_US&gl=US
 
-
-# Інше
-
-- Інструкція як автоматично скаржитись на хуйловські телеграм-канали - https://github.com/ftishko/de_d-mosk_l
-
-_via Docker_
-```
-docker build -t de_d-mosk_l .
-torsocks docker run --rm -it de_d-mosk_l - якщо встановлено тор
-docker run —rm -it de_d-mosk_l
-```
-
-_via Python 3_
-```
-git clone https://github.com/ftishko/de_d-mosk_l.git
-cd de_d-mosk_l
-pip3 install -r requirements.txt
-python3 runner.py
-
-# win
-pip install -r requirements.txt
-python runner.py
-```
 
 # Слава Україні!
 
