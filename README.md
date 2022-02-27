@@ -102,6 +102,22 @@ TODO
 
 https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
 
+
+# VPN 
+
+**ClearVPN**
+Цитата з Телеграм каналу [DDOS по країні СЕПАРІВ](https://t.me/+97Y45he5lOI2ZTky)
+
+> Інфовоїни! Для наших бешкецтв потрібний надійний захист. Наші друзі з MacPaw дають промокод на ClearVPN, користуйтесь на здоров'я.
+
+> Infowarriors! Our riots need reliable protection. Our friends from MacPaw give a promo code on ClearVPN, enjoy. 
+
+https://my.clearvpn.com/promo/redeem?code=SAVEUKRAINE
+
+Треба зареєструватись, і вже тоді собі скачати програму для вашої ОС.
+Правда той код діє до 2023го року тільки.
+
+
 # Слава Україні!
 
 # Героям Слава!
