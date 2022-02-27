@@ -3,6 +3,7 @@
 # Туторіали про DDoS
 - https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit
 - https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
+- https://zhashkevych.notion.site/zhashkevych/DDOS-1758d62440c34f6186c2cefdeee204a0
 
 
 ## Як провірити чи сайт "впав" остаточно
