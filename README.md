@@ -1,6 +1,6 @@
 # Збірка DDoS методів
 
-# Туторіали? гайди, інструкції, etc. про DDoS
+# Туторіали, гайди, інструкції, etc. про DDoS
 - [Інструкція щодо ДДоС-атаки для чайників](https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit) by unknown
 - [Туторіал по DDoS](https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2) by tarahtino
 - [Инструкция по DDOS атакам](https://zhashkevych.notion.site/zhashkevych/DDOS-1758d62440c34f6186c2cefdeee204a0) by zhashkevych
