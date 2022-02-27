@@ -99,10 +99,9 @@ TODO
 
 
 
-# Більше про DDoS
-
-https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
-
+# Туторіали про DDoS
+- https://tarahtino.notion.site/tarahtino/DDoS-1505b74f6f8443768dc47e0f4d2ee8b2
+- https://docs.google.com/document/d/18nxvjQuHpAgrJ-t9S9CJ9dPK9_z0F73UrBpBFn7ZyVo/edit
 
 # VPN 
 
@@ -118,6 +117,20 @@ https://my.clearvpn.com/promo/redeem?code=SAVEUKRAINE
 Треба зареєструватись, і вже тоді собі скачати програму для вашої ОС.
 Правда той код діє до 2023го року тільки.
 
+До речі, Росія в списку є.
+
+**Інші**: 
+- NordVPN https://nordvpn.com/, 
+- Psiphon https://psiphon.ca/en/download.html?psiphonca
+- ProtonVPN https://protonvpn.com/pricing (але пишуть, що є баг)
+- SurfShark https://surfshark.com/deal/influencer?coupon=NETSTALKERS (увага - лінк з купоном)
+- UrbanVPN https://www.urban-vpn.com/ (але пишуть що "сливает данные")
+- ExpressVPN https://www.expressvpn.com/ (сам юзаю, бо на швидку руку купив перший попавший з найкращих, і пішло... Важливо, що Росії в списку не має)
+- https://www.vpngate.net
+- https://www.freeopenvpn.org
+
+*VPN для Android*
+- Secure VPN https://play.google.com/store/apps/details?id=com.fast.free.unblock.secure.vpn&hl=en_US&gl=US
 
 # Слава Україні!
 
@@ -127,6 +140,6 @@ https://my.clearvpn.com/promo/redeem?code=SAVEUKRAINE
 
 # Смерть Ворогам!
 
-# Україна понад усе
+# Україна понад усе!
 
 PS. Maintained by @Andrii_L
